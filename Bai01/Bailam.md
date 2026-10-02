@@ -6,23 +6,39 @@ Trong C#, kiểu dữ liệu được chia thành hai nhóm cơ bản là Value 
 1. Kiểu giá trị – Value Types
 Value Type là kiểu dữ liệu mà biến lưu trực tiếp giá trị của dữ liệu. Khi một biến Value Type được gán cho một biến khác thì giá trị được sao chép sang biến mới. Hai biến sau khi sao chép sẽ độc lập với nhau.
 Các kiểu Value Type phổ biến trong C# gồm:
--int 
--float 
--double 
--decimal 
--bool 
--char 
--struct 
--enum
-2. Kiểu tham chiếu – Reference Types
+
+int 
+
+float 
+
+double 
+
+decimal 
+
+bool 
+
+char
+
+struct 
+
+enum
+
+3. Kiểu tham chiếu – Reference Types
 Reference Type là kiểu dữ liệu mà biến không trực tiếp chứa toàn bộ dữ liệu của đối tượng, mà chứa một tham chiếu (reference) đến đối tượng được lưu trữ trong bộ nhớ.
 Các Reference Type thường gặp gồm:
-class 
-object 
-string 
-array 
-interface 
-delegate
+
+class 
+
+object 
+
+string 
+
+array 
+
+interface 
+
+delegate
+
 Kết luận
 Có thể ghi nhớ:
 Value Type chứa giá trị, còn Reference Type chứa tham chiếu. Value Type khi gán sẽ tạo ra một bản sao độc lập của giá trị. Reference Type khi gán thường tạo ra một bản sao của tham chiếu, do đó nhiều biến có thể cùng tham chiếu đến một đối tượng trên Heap.

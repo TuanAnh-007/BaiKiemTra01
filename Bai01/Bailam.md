@@ -67,10 +67,15 @@ Name = "Cường"
 Có thể tiếp tục thay đổi
 Điều này phù hợp với những dữ liệu có thể thay đổi trong quá trình chương trình hoạt động.
 Ví dụ:
-Tên khách hàng có thể được cập nhật. 
-Địa chỉ khách hàng có thể thay đổi. 
-Số điện thoại có thể thay đổi. 
-Trạng thái đơn hàng có thể thay đổi.
+
+Tên khách hàng có thể được cập nhật. 
+
+Địa chỉ khách hàng có thể thay đổi. 
+
+Số điện thoại có thể thay đổi. 
+
+Trạng thái đơn hàng có thể thay đổi.
+
 2. Property sử dụng 
 init được giới thiệu từ C# 9 và tiếp tục được sử dụng trong các phiên bản C# sau đó.
 Ví dụ:
@@ -112,13 +117,21 @@ sv.Name = "Binh";
 sẽ bị lỗi.
 5. Một số trường hợp sử dụng thực tế
 init phù hợp với:
-Mã sinh viên. 
-Mã nhân viên. 
-Mã đơn hàng. 
-ID của đối tượng. 
-Thời điểm tạo đối tượng. 
-Các thông tin cấu hình. 
-Các thuộc tính xác định danh tính của đối tượng. 
+
+Mã sinh viên. 
+
+Mã nhân viên. 
+
+Mã đơn hàng. 
+
+ID của đối tượng. 
+
+Thời điểm tạo đối tượng. 
+
+Các thông tin cấu hình. 
+
+Các thuộc tính xác định danh tính của đối tượng. 
+
 Ví dụ:
 class Order
 {
@@ -131,9 +144,11 @@ OrderId và CreatedDate có thể được thiết lập lúc tạo đơn hàng 
 Câu 3. Phân biệt phương thức virtual ở lớp cha và phương thức override ở lớp con khi triển khai tính Đa hình (Polymorphism)
 Đa hình (Polymorphism) là một trong những đặc điểm quan trọng của lập trình hướng đối tượng. Trong C#, đa hình cho phép cùng một lời gọi phương thức nhưng có thể thực hiện những hành vi khác nhau tùy thuộc vào đối tượng thực tế.
 Để triển khai đa hình giữa lớp cha và lớp con, C# thường sử dụng hai từ khóa:
-virtual 
-override 
-
+
+virtual 
+
+override 
+
 1. Phương thức virtual ở lớp cha
 virtual được sử dụng để khai báo một phương thức trong lớp cha có khả năng được ghi đè bởi lớp con.
 Ví dụ:

@@ -1,27 +1,28 @@
 I.Phần lý thuyết và câu hỏi ngắn
 
+
 Câu 1. Trình bày sự khác nhau giữa Value Types (kiểu giá trị) và Reference Types (kiểu tham chiếu) trong C# về cơ chế lưu trữ vùng nhớ Stack và Heap
 Trong C#, kiểu dữ liệu được chia thành hai nhóm cơ bản là Value Types (kiểu giá trị) và Reference Types (kiểu tham chiếu). Hai nhóm này khác nhau chủ yếu ở cách dữ liệu được lưu trữ trong bộ nhớ và cách các biến được sao chép, truyền vào phương thức cũng như quản lý trong quá trình chương trình thực thi.
 1. Kiểu giá trị – Value Types
 Value Type là kiểu dữ liệu mà biến lưu trực tiếp giá trị của dữ liệu. Khi một biến Value Type được gán cho một biến khác thì giá trị được sao chép sang biến mới. Hai biến sau khi sao chép sẽ độc lập với nhau.
 Các kiểu Value Type phổ biến trong C# gồm:
-• int 
-• float 
-• double 
-• decimal 
-• bool 
-• char 
-• struct 
-• enum
+-int 
+-float 
+-double 
+-decimal 
+-bool 
+-char 
+-struct 
+-enum
 2. Kiểu tham chiếu – Reference Types
 Reference Type là kiểu dữ liệu mà biến không trực tiếp chứa toàn bộ dữ liệu của đối tượng, mà chứa một tham chiếu (reference) đến đối tượng được lưu trữ trong bộ nhớ.
 Các Reference Type thường gặp gồm:
-• class 
-• object 
-• string 
-• array 
-• interface 
-• delegate
+class 
+object 
+string 
+array 
+interface 
+delegate
 Kết luận
 Có thể ghi nhớ:
 Value Type chứa giá trị, còn Reference Type chứa tham chiếu. Value Type khi gán sẽ tạo ra một bản sao độc lập của giá trị. Reference Type khi gán thường tạo ra một bản sao của tham chiếu, do đó nhiều biến có thể cùng tham chiếu đến một đối tượng trên Heap.
@@ -50,12 +51,12 @@ Name = "Cường"
 Có thể tiếp tục thay đổi
 Điều này phù hợp với những dữ liệu có thể thay đổi trong quá trình chương trình hoạt động.
 Ví dụ:
-• Tên khách hàng có thể được cập nhật. 
-• Địa chỉ khách hàng có thể thay đổi. 
-• Số điện thoại có thể thay đổi. 
-• Trạng thái đơn hàng có thể thay đổi.
-2. Property sử dụng
-3. init được giới thiệu từ C# 9 và tiếp tục được sử dụng trong các phiên bản C# sau đó.
+Tên khách hàng có thể được cập nhật. 
+Địa chỉ khách hàng có thể thay đổi. 
+Số điện thoại có thể thay đổi. 
+Trạng thái đơn hàng có thể thay đổi.
+2. Property sử dụng 
+init được giới thiệu từ C# 9 và tiếp tục được sử dụng trong các phiên bản C# sau đó.
 Ví dụ:
 public string Name { get; init; }
 Property này vẫn có thể được thiết lập khi khởi tạo đối tượng:
@@ -95,13 +96,13 @@ sv.Name = "Binh";
 sẽ bị lỗi.
 5. Một số trường hợp sử dụng thực tế
 init phù hợp với:
-• Mã sinh viên. 
-• Mã nhân viên. 
-• Mã đơn hàng. 
-• ID của đối tượng. 
-• Thời điểm tạo đối tượng. 
-• Các thông tin cấu hình. 
-• Các thuộc tính xác định danh tính của đối tượng. 
+Mã sinh viên. 
+Mã nhân viên. 
+Mã đơn hàng. 
+ID của đối tượng. 
+Thời điểm tạo đối tượng. 
+Các thông tin cấu hình. 
+Các thuộc tính xác định danh tính của đối tượng. 
 Ví dụ:
 class Order
 {
@@ -114,9 +115,9 @@ OrderId và CreatedDate có thể được thiết lập lúc tạo đơn hàng 
 Câu 3. Phân biệt phương thức virtual ở lớp cha và phương thức override ở lớp con khi triển khai tính Đa hình (Polymorphism)
 Đa hình (Polymorphism) là một trong những đặc điểm quan trọng của lập trình hướng đối tượng. Trong C#, đa hình cho phép cùng một lời gọi phương thức nhưng có thể thực hiện những hành vi khác nhau tùy thuộc vào đối tượng thực tế.
 Để triển khai đa hình giữa lớp cha và lớp con, C# thường sử dụng hai từ khóa:
-• virtual 
-• override 
-• ________________________________________
+virtual 
+override 
+
 1. Phương thức virtual ở lớp cha
 virtual được sử dụng để khai báo một phương thức trong lớp cha có khả năng được ghi đè bởi lớp con.
 Ví dụ:
@@ -139,7 +140,7 @@ class Dog : Animal
 {
     public override void Sound()
     {
-   Console.WriteLine("Cho keu: Gau gau");
+        Console.WriteLine("Cho keu: Gau gau");
     }
 }
 Ở đây, Dog kế thừa từ Animal.
@@ -194,7 +195,7 @@ sv2.Count
 Khi thực hiện:
 Student sv = new Student();
 toán tử new tạo ra một instance mới của lớp Student.
-Nếu có: 
+Nếu có:	
 Student sv1 = new Student();
 Student sv2 = new Student();
 thì có hai instance:
@@ -212,3 +213,15 @@ new Student();
 new Student();
 new Student();
 thì static Count vẫn là thành viên chung của Student.
+
+
+
+
+
+
+
+
+
+
+
+

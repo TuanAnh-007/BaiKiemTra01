@@ -1,5 +1,6 @@
 I.Phần lý thuyết và câu hỏi ngắn
- Câu 1. Trình bày sự khác nhau giữa Value Types (kiểu giá trị) và Reference Types (kiểu tham chiếu) trong C# về cơ chế lưu trữ vùng nhớ Stack và Heap
+
+Câu 1. Trình bày sự khác nhau giữa Value Types (kiểu giá trị) và Reference Types (kiểu tham chiếu) trong C# về cơ chế lưu trữ vùng nhớ Stack và Heap
 Trong C#, kiểu dữ liệu được chia thành hai nhóm cơ bản là Value Types (kiểu giá trị) và Reference Types (kiểu tham chiếu). Hai nhóm này khác nhau chủ yếu ở cách dữ liệu được lưu trữ trong bộ nhớ và cách các biến được sao chép, truyền vào phương thức cũng như quản lý trong quá trình chương trình thực thi.
 1. Kiểu giá trị – Value Types
 Value Type là kiểu dữ liệu mà biến lưu trực tiếp giá trị của dữ liệu. Khi một biến Value Type được gán cho một biến khác thì giá trị được sao chép sang biến mới. Hai biến sau khi sao chép sẽ độc lập với nhau.
